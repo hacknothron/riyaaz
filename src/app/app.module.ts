@@ -10,6 +10,8 @@ import { ClassesComponent } from './classes/classes.component';
 import { EventsComponent } from './events/events.component';
 import { FacultyComponent } from './faculty/faculty.component';
 import { TeamComponent } from './team/team.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { TeamComponent } from './team/team.component';
     ClassesComponent,
     EventsComponent,
     FacultyComponent,
-    TeamComponent
+    TeamComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

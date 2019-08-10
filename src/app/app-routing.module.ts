@@ -1,38 +1,47 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { LandingComponent } from "./landing/landing.component";
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
-import { EventsComponent } from './events/events.component';
-import { FacultyComponent } from './faculty/faculty.component';
-import { TeamComponent } from './team/team.component';
+import { AboutComponent } from "./about/about.component";
+import { ContactComponent } from "./contact/contact.component";
+import { EventsComponent } from "./events/events.component";
+import { FacultyComponent } from "./faculty/faculty.component";
+import { TeamComponent } from "./team/team.component";
+import { ClassesComponent } from './classes/classes.component';
 
 const routes: Routes = [
   {
     path: "",
     pathMatch: "full",
+    redirectTo: "home"
+  },
+  {
+    path: "home",
     component: LandingComponent
   },
   {
-    path: "/aboutus",
+    path: "aboutus",
     component: AboutComponent
   },
   {
-    path: "/contactus",
+    path: "contactus",
     component: ContactComponent
   },
   {
-    path: "/event",
+    path: "event",
     component: EventsComponent
   },
   {
-    path: "/faculty",
+    path: "faculty",
     component: FacultyComponent
   },
-  
+
   {
-    path: "/team",
+    path: "team",
     component: TeamComponent
+  },
+  {
+    path: "classes",
+    component: ClassesComponent
   }
 ];
 

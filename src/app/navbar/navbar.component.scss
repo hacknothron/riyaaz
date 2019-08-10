@@ -1,0 +1,13 @@
+.c #fh5co-logo {
+    font-size: 22.6px !important;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .fh5co-nav #fh5co-logo {
+        font-size: 22px;
+    }
+}
